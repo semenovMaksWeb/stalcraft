@@ -7,11 +7,11 @@ export function axiosGetCategoriesItem() {
 }
 
 // Получить список предметов по категории
-export function axiosGetItemToCategoriesId(idCategories) {
-    return axios.get(`https://stalcraft.wiki/_next/data/nbO-jOTBQNgXqpTNtG1Z7/ru/items/weapon.json?category=${idCategories}`);
+export async function axiosGetItemToCategoriesId(idCategories) {
+    return (await axios.get(`https://stalcraft.wiki/_next/data/nbO-jOTBQNgXqpTNtG1Z7/ru/items/weapon.json?category=${idCategories}`)).data;
 }
 
 // Получить предмет информацию об бартере
-export function axiosGetItemBarterToId(idItem) {
-    return axios.get(`https://stalcraft.wiki/api/exbo/item/barter/${idItem}`);
+export async function axiosGetItemBarterToId(idItem) {
+    return (await axios.get(`https://stalcraft.wiki/api/exbo/item/barter/${idItem}`)).data;
 }
