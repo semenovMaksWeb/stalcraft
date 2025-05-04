@@ -3,7 +3,7 @@
 import { getBarterAll, saveItemsCategoriesBd, saveItemsInfo } from "./core/core.js";
 
 (async () => {
-    await saveItemsCategoriesBd();
-    await saveItemsInfo();
+    // await saveItemsCategoriesBd();
+    // await saveItemsInfo();
     await getBarterAll();
 })()

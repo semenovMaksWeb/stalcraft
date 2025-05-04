@@ -1,5 +1,5 @@
 import { axiosGetCategoriesItem, axiosGetItemBarterToId, axiosGetItemToCategoriesId } from "../axios/viki.js";
-import { getItemBarterId, getItemBd, resetBarterToItem, resetItemBd, saveBarterCountItemBd, saveItemAndBarterBd, saveItemBarterBd, saveItemBd, updateItemBd } from "../bd/bd.js";
+import { getItemBarterId, getItemBd, resetBarterCountItemBd, resetBarterToItem, resetItemBd, saveBarterCountItemBd, saveItemAndBarterBd, saveItemBarterBd, saveItemBd, updateItemBd } from "../bd/bd.js";
 
 
 export async function getCategoriesItem() {
@@ -93,6 +93,7 @@ export async function saveItemsInfo() {
 // Определения бартера рекурсией 
 // пока что не учитываются предметы, которые не требуются для крафта следующих стволов (их нет)
 export async function getBarterAll() {
+    await resetBarterCountItemBd();
     const itemList = await getItemBd();
     for (const item of itemList) {
         item.count = 0;
