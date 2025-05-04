@@ -22,3 +22,11 @@ CREATE TABLE public.barter_count (
 
 ALTER TABLE public.barter_count ALTER COLUMN id_item TYPE varchar USING id_item::varchar;
 ALTER TABLE public.item ALTER COLUMN preitemid TYPE varchar USING preitemid::varchar;
+
+-- получить список нужного бартера
+select bi."name" as barter, i."name", count
+from barter_count bc 
+left join barter_item bi on bi.id = bc.id_barter
+left join item i on i.id = bc.id_item
+
+-- получить список
