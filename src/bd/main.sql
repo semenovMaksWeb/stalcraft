@@ -4,3 +4,4 @@ CREATE TABLE public.item (
 	category varchar NULL,
 	CONSTRAINT item_pk PRIMARY KEY (id)
 );
+ALTER TABLE public.item ADD is_barter boolean NULL;

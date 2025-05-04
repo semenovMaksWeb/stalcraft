@@ -1,17 +1,26 @@
 import { Client } from 'pg'
 
+
 const bd = new Client({
     user: 'postgres',
     password: '1',
     host: 'localhost',
-    port: 5334,
+    port: 5432,
     database: 'stalcraft',
 })
-
-return bd;
+bd.connect();
 
 export async function saveItemBd(item) {
-    const text = "INSERT INTO users(id, name, category) VALUES($1, $2)";
-    const values = [item.exbo_id, item.name.lines.ru, item.category]
-    await client.query(text, values);
+    try {
+
+        const text = "INSERT INTO item(id, name, category) VALUES($1, $2, $3)";
+        const values = [item.exbo_id, item.name.lines.ru, item.category]
+        console.log(text, values);
+
+        const res = await bd.query(text, values);
+        console.log(res);
+    } catch (e) {
+        console.error(e);
+    }
+
 }
