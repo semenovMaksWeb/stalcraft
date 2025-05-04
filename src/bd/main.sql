@@ -44,3 +44,10 @@ COMMENT ON TABLE public.barter_count IS 'Таблица которая хран�
 -- left join barter_item bi on bi.id = bc.id_barter
 -- where bci.count::int <> 0 and (bc.count notnull and bc.count <> 1)
 -- group by bi."name" ;
+
+-- ТЕСТ!
+-- SELECT i."name" as name_item, bci.count as item_count, bi."name" as name_barter, bc.count  as count_barter FROM public.barter_count_item bci
+-- left join item i on i.id = bci.id_item
+-- left join barter_count bc on bc.id_item = bci.id_item
+-- left join barter_item bi on bi.id = bc.id_barter
+-- where bci.count::int <> 0 and (bc.count notnull and bc.count <> 1)
