@@ -89,3 +89,42 @@ export async function saveItemsInfo() {
         }
     }
 }
+
+// Определения бартера рекурсией 
+// пока что не учитываются предметы, которые не требуются для крафта следующих стволов (их нет)
+export async function getBarterAll() {
+    const itemList = await getItemBd();
+    for (const item of itemList) {
+        item.count = 0;
+    }
+
+    function checkResurc(item, check = false) {
+        const itemParent = itemList.find((e) => e.preitemid == item.id);
+        if (!itemParent && item.preitemid && item.is_barter || check) {
+            if (!check) {
+                console.log(item.name);
+            }
+            const preItem = itemList.find((e) => e.id == item.preitemid);
+            if (preItem) {
+                preItem.count += 1;
+                checkResurc(preItem, true);
+            }
+        }
+
+
+
+    }
+
+    for (const item of itemList) {
+        checkResurc(item);
+    }
+
+    const objectGet = [];
+    for (const item of itemList) {
+        if (item.is_barter) {
+            objectGet.push({ name: item.name, count: item.count })
+        }
+    }
+    console.log(JSON.stringify(objectGet));
+
+}
