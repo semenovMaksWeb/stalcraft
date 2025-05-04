@@ -1,0 +1,2 @@
+1 https://stalcraft.wiki/_next/data/nbO-jOTBQNgXqpTNtG1Z7/ru/blog.json - ссылка на категории предметов
+2 https://stalcraft.wiki/ - ссылка на википедию сталкрафт
