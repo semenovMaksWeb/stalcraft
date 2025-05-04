@@ -1,0 +1,550 @@
+[
+    {
+        "name": "БМ-16",
+        "count": 1
+    },
+    {
+        "name": "ПМ",
+        "count": 3
+    },
+    {
+        "name": "АКС-74У",
+        "count": 6
+    },
+    {
+        "name": "СКС",
+        "count": 1
+    },
+    {
+        "name": "ТОЗ-34",
+        "count": 1
+    },
+    {
+        "name": "ТТ",
+        "count": 3
+    },
+    {
+        "name": "Нож 6Х9",
+        "count": 1
+    },
+    {
+        "name": "Mossberg 590A1",
+        "count": 1
+    },
+    {
+        "name": "АКС-74",
+        "count": 6
+    },
+    {
+        "name": "M16A2",
+        "count": 1
+    },
+    {
+        "name": "Винтовка Мосина",
+        "count": 4
+    },
+    {
+        "name": "Поношенный Winchester M70",
+        "count": 1
+    },
+    {
+        "name": "IMI Uzi",
+        "count": 0
+    },
+    {
+        "name": "АКМ",
+        "count": 5
+    },
+    {
+        "name": "Поношенный SIG SG 550",
+        "count": 0
+    },
+    {
+        "name": "Поношенная L86A1",
+        "count": 0
+    },
+    {
+        "name": "M4A1",
+        "count": 1
+    },
+    {
+        "name": "Охотничий нож",
+        "count": 1
+    },
+    {
+        "name": "Монтировка",
+        "count": 1
+    },
+    {
+        "name": "Форт-12",
+        "count": 0
+    },
+    {
+        "name": "Mauser C96",
+        "count": 3
+    },
+    {
+        "name": "МР-153",
+        "count": 1
+    },
+    {
+        "name": "СВТ-40",
+        "count": 2
+    },
+    {
+        "name": "ПП-2000",
+        "count": 1
+    },
+    {
+        "name": "АЕК-919К «Каштан»",
+        "count": 2
+    },
+    {
+        "name": "Walther P99",
+        "count": 1
+    },
+    {
+        "name": "«Highest power»",
+        "count": 1
+    },
+    {
+        "name": "ПП-19-01 «Витязь»",
+        "count": 1
+    },
+    {
+        "name": "Colt Python",
+        "count": 1
+    },
+    {
+        "name": "«Смессон»",
+        "count": 1
+    },
+    {
+        "name": "Beretta Mx4 Storm",
+        "count": 0
+    },
+    {
+        "name": "Beretta 92FS",
+        "count": 1
+    },
+    {
+        "name": "АК-103",
+        "count": 2
+    },
+    {
+        "name": "M40A5",
+        "count": 1
+    },
+    {
+        "name": "ПП-19 «Бизон-2-01»",
+        "count": 1
+    },
+    {
+        "name": "M1A",
+        "count": 1
+    },
+    {
+        "name": "МЦ-558",
+        "count": 1
+    },
+    {
+        "name": "СВУ",
+        "count": 0
+    },
+    {
+        "name": "FN F2000",
+        "count": 1
+    },
+    {
+        "name": "SIG SG 550",
+        "count": 0
+    },
+    {
+        "name": "РПД",
+        "count": 1
+    },
+    {
+        "name": "АК-203",
+        "count": 1
+    },
+    {
+        "name": "M4A1 CQC",
+        "count": 1
+    },
+    {
+        "name": "HK G3A1",
+        "count": 0
+    },
+    {
+        "name": "HK MP5",
+        "count": 0
+    },
+    {
+        "name": "L86A1",
+        "count": 0
+    },
+    {
+        "name": "СР-3 «Вихрь»",
+        "count": 1
+    },
+    {
+        "name": "Мачете Survival SP8 Ontario",
+        "count": 1
+    },
+    {
+        "name": "АЕК-973 «Марс»",
+        "count": 1
+    },
+    {
+        "name": "Охотничий мачете",
+        "count": 1
+    },
+    {
+        "name": "L85A1",
+        "count": 0
+    },
+    {
+        "name": "Штык-нож M9",
+        "count": 1
+    },
+    {
+        "name": "ОЦ-04",
+        "count": 1
+    },
+    {
+        "name": "Scorpion EVO III",
+        "count": 1
+    },
+    {
+        "name": "РШ-12",
+        "count": 1
+    },
+    {
+        "name": "SIG Sauer P320",
+        "count": 1
+    },
+    {
+        "name": "А-545",
+        "count": 1
+    },
+    {
+        "name": "«Большой Билл»",
+        "count": 1
+    },
+    {
+        "name": "Кукри",
+        "count": 1
+    },
+    {
+        "name": "Mk 14 EBR",
+        "count": 1
+    },
+    {
+        "name": "ВССК «Выхлоп»",
+        "count": 1
+    },
+    {
+        "name": "Desert Eagle Mark XIX",
+        "count": 1
+    },
+    {
+        "name": "ППК-20",
+        "count": 1
+    },
+    {
+        "name": "FN F2000 Tactical",
+        "count": 1
+    },
+    {
+        "name": "АСМ «Сервал»",
+        "count": 1
+    },
+    {
+        "name": "Антитеррор",
+        "count": 1
+    },
+    {
+        "name": "СР-3М",
+        "count": 1
+    },
+    {
+        "name": "СВД-М",
+        "count": 1
+    },
+    {
+        "name": "PSA 20 STR «Пульс»",
+        "count": 1
+    },
+    {
+        "name": "АК-15",
+        "count": 1
+    },
+    {
+        "name": "TDI KRISS Vector",
+        "count": 1
+    },
+    {
+        "name": "АМ-17",
+        "count": 1
+    },
+    {
+        "name": "L96A1",
+        "count": 1
+    },
+    {
+        "name": "Тактическая катана",
+        "count": 1
+    },
+    {
+        "name": "АМБ-17",
+        "count": 1
+    },
+    {
+        "name": "6П62 «Малыш»",
+        "count": 1
+    },
+    {
+        "name": "ВСС-М «Винторез»",
+        "count": 1
+    },
+    {
+        "name": "ОЦ-33 «Пернач»",
+        "count": 1
+    },
+    {
+        "name": "Кувалда",
+        "count": 1
+    },
+    {
+        "name": "M16A1",
+        "count": 1
+    },
+    {
+        "name": "Walther MPK",
+        "count": 3
+    },
+    {
+        "name": "Карабин Мосина",
+        "count": 4
+    },
+    {
+        "name": "Изделие 6Х4",
+        "count": 1
+    },
+    {
+        "name": "Обрез БМ-16",
+        "count": 1
+    },
+    {
+        "name": "ПП-91 «Кедр»",
+        "count": 3
+    },
+    {
+        "name": "Shorty 590",
+        "count": 1
+    },
+    {
+        "name": "МР-133",
+        "count": 1
+    },
+    {
+        "name": "КО-1",
+        "count": 1
+    },
+    {
+        "name": "Молоток",
+        "count": 1
+    },
+    {
+        "name": "M16A3",
+        "count": 1
+    },
+    {
+        "name": "АКС чистильщика",
+        "count": 1
+    },
+    {
+        "name": "АК-74М",
+        "count": 6
+    },
+    {
+        "name": "СКТ-40",
+        "count": 2
+    },
+    {
+        "name": "«Гепард»",
+        "count": 3
+    },
+    {
+        "name": "Vz.68 Scorpion",
+        "count": 0
+    },
+    {
+        "name": "Franchi SPAS-12",
+        "count": 1
+    },
+    {
+        "name": "Поношенная L85A1",
+        "count": 0
+    },
+    {
+        "name": "АН-94 «Абакан»",
+        "count": 1
+    },
+    {
+        "name": "Glock Feldmesser 78",
+        "count": 1
+    },
+    {
+        "name": "Browning Hi-Power",
+        "count": 2
+    },
+    {
+        "name": "СКС-Т",
+        "count": 1
+    },
+    {
+        "name": "Winchester M70",
+        "count": 1
+    },
+    {
+        "name": "Spectre M4",
+        "count": 0
+    },
+    {
+        "name": "Тактический нож Ka-Bar BKR3",
+        "count": 1
+    },
+    {
+        "name": "Поношенный ПКП",
+        "count": 1
+    },
+    {
+        "name": "Glock 17",
+        "count": 1
+    },
+    {
+        "name": "PSA PA 10 «Ритм»",
+        "count": 1
+    },
+    {
+        "name": "Desert Eagle Mark VII",
+        "count": 1
+    },
+    {
+        "name": "«Витязь-СН»",
+        "count": 1
+    },
+    {
+        "name": "Beretta 93R",
+        "count": 0
+    },
+    {
+        "name": "SW1911",
+        "count": 1
+    },
+    {
+        "name": "Поношенный Colt Python",
+        "count": 1
+    },
+    {
+        "name": "ОЦ-14 «Гроза»",
+        "count": 1
+    },
+    {
+        "name": "Сайга-12К",
+        "count": 1
+    },
+    {
+        "name": "АКС-9 «Горностай»",
+        "count": 1
+    },
+    {
+        "name": "ВСС «Винторез»",
+        "count": 1
+    },
+    {
+        "name": "СВД-С",
+        "count": 1
+    },
+    {
+        "name": "СВД",
+        "count": 2
+    },
+    {
+        "name": "M1A FA",
+        "count": 1
+    },
+    {
+        "name": "АН-94М «Абакан»",
+        "count": 1
+    },
+    {
+        "name": "АС «Вал»",
+        "count": 1
+    },
+    {
+        "name": "АК-9М «Койот»",
+        "count": 1
+    },
+    {
+        "name": "ОЦ-14-А1 «Тор»",
+        "count": 1
+    },
+    {
+        "name": "PSA PA 10 «Такт»",
+        "count": 1
+    },
+    {
+        "name": "Поношенная HK G3A1",
+        "count": 0
+    },
+    {
+        "name": "РПК-74",
+        "count": 0
+    },
+    {
+        "name": "HK G36C",
+        "count": 0
+    },
+    {
+        "name": "Protecta",
+        "count": 1
+    },
+    {
+        "name": "FN P90",
+        "count": 1
+    },
+    {
+        "name": "Поношенная M40A5",
+        "count": 1
+    },
+    {
+        "name": "СР-2М «Вереск»",
+        "count": 1
+    },
+    {
+        "name": "АЕК-971",
+        "count": 1
+    },
+    {
+        "name": "HK UMP45",
+        "count": 0
+    },
+    {
+        "name": "АКМ «Тишина»",
+        "count": 2
+    },
+    {
+        "name": "АШ-12",
+        "count": 1
+    },
+    {
+        "name": "А-762 «Арес»",
+        "count": 1
+    },
+    {
+        "name": "ПКП «Печенег»",
+        "count": 1
+    }
+]

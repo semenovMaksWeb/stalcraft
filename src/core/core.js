@@ -1,5 +1,6 @@
 import { axiosGetCategoriesItem, axiosGetItemBarterToId, axiosGetItemToCategoriesId } from "../axios/viki.js";
-import { getItemBarterId, getItemBd, resetBarterToItem, saveItemAndBarterBd, saveItemBarterBd, saveItemBd, updateItemBd } from "../bd/bd.js";
+import { getItemBarterId, getItemBd, resetBarterToItem, resetItemBd, saveBarterCountItemBd, saveItemAndBarterBd, saveItemBarterBd, saveItemBd, updateItemBd } from "../bd/bd.js";
+
 
 export async function getCategoriesItem() {
     return await axiosGetCategoriesItem();
@@ -7,6 +8,7 @@ export async function getCategoriesItem() {
 
 // Получить все предметы с Wiki
 export async function saveItemsCategoriesBd() {
+    await resetItemBd();
     const categories = await getCategoriesItem();
     for (const categoriesItem of categories) {
         const data = await axiosGetItemToCategoriesId(categoriesItem);
@@ -67,13 +69,11 @@ export async function saveItemsInfo() {
                 id: itemBarter.exbo_id,
                 baza: itemBarter.settlementTitles?.[0].ru,
                 money: itemBarter.recipes?.[0]?.money,
-                preItemId: itemBarter?.recipes[0]?.item?.exbo_id,
+                preItemId: itemBarter?.recipes.map((e) => e.item?.exbo_id),
                 is_barter: true,
             }
 
             await updateItemBd(itemUpdated);
-            console.log("Завершено успешно!", item);
-
 
         } catch (e) {
             console.log(e);
@@ -96,35 +96,57 @@ export async function getBarterAll() {
     const itemList = await getItemBd();
     for (const item of itemList) {
         item.count = 0;
+        const arrayNew = [];
+        if (Array.isArray(item?.preitemid)) {
+            for (const preitemid of item?.preitemid) {
+                if (preitemid !== null) {
+                    arrayNew.push(preitemid);
+                }
+            }
+            item.preitemid = arrayNew;
+        }
     }
 
     function checkResurc(item, check = false) {
-        const itemParent = itemList.find((e) => e.preitemid == item.id);
-        if (!itemParent && item.preitemid && item.is_barter || check) {
-            if (!check) {
-                console.log(item.name);
+        if (!item.is_barter) {
+            return;
+        }
+
+        let itemParent = -1;
+        for (const itemFor of itemList) {
+            if (!itemFor.preitemid) {
+                continue;
             }
-            const preItem = itemList.find((e) => e.id == item.preitemid);
+            itemParent = itemFor.preitemid.indexOf(item.id)
+            if (itemParent !== -1) {
+                break;
+            }
+        }
+
+        if (itemParent == -1 && item.preitemid && item.is_barter || check) {
+
+            if (!check) {
+                item.count = 1;
+            }
+
+            const preItem = itemList.find((e) => e.id == item.preitemid[0]);
+
             if (preItem) {
                 preItem.count += 1;
                 checkResurc(preItem, true);
             }
         }
-
-
-
     }
 
     for (const item of itemList) {
         checkResurc(item);
     }
 
-    const objectGet = [];
     for (const item of itemList) {
         if (item.is_barter) {
-            objectGet.push({ name: item.name, count: item.count })
+            const elem = { id_item: item.id, count: item.count }
+            console.log(elem);            
+            await saveBarterCountItemBd(elem)
         }
     }
-    console.log(JSON.stringify(objectGet));
-
 }
