@@ -8,7 +8,7 @@ export function axiosGetCategoriesItem() {
 
 // Получить список предметов по категории
 export async function axiosGetItemToCategoriesId(idCategories) {
-    return (await axios.get(`https://stalcraft.wiki/_next/data/nbO-jOTBQNgXqpTNtG1Z7/ru/items/weapon.json?category=${idCategories}`)).data;
+    return (await axios.get(`https://stalcraft.wiki/_next/data/nbO-jOTBQNgXqpTNtG1Z7/ru/items/${idCategories}.json?`)).data;
 }
 
 // Получить предмет информацию об бартере
