@@ -30,6 +30,14 @@ COMMENT ON TABLE public.barter_count_item IS 'Таблица которая го
 COMMENT ON TABLE public.barter_count IS 'Таблица которая хранит сслыку ММ предмета и бартера который нужен';
 
 
+CREATE TABLE public.my_item (
+	id int GENERATED ALWAYS AS IDENTITY NOT NULL,
+	id_item varchar NOT NULL,
+	count int NULL,
+	CONSTRAINT my_item_pk PRIMARY KEY (id)
+);
+
+
 -- получить список нужного бартера
 -- select bi."name" as barter, i."name", count
 -- from barter_count bc 
