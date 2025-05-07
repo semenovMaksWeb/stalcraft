@@ -38,22 +38,16 @@ CREATE TABLE public.my_item (
 );
 
 
--- получить список нужного бартера
--- select bi."name" as barter, i."name", count
--- from barter_count bc 
--- left join barter_item bi on bi.id = bc.id_barter
--- left join item i on i.id = bc.id_item
--- получить список
-
 -- Весь бартер кол-во
--- SELECT  bi."name" as name_barter, SUM(bci.count::int * bc.count::int) as sym_test  FROM public.barter_count_item bci
+-- SELECT  bi."name" as name_barter, SUM((bci.count::int- COALESCE(mi.count, 0)) * bc.count::int) as sym FROM public.barter_count_item bci
 -- left join item i on i.id = bci.id_item
 -- left join barter_count bc on bc.id_item = bci.id_item
 -- left join barter_item bi on bi.id = bc.id_barter
+-- left join my_item mi on mi.id_item = bc.id_barter or mi.id_item  = i.id
 -- where bci.count::int <> 0 and (bc.count notnull and bc.count <> 1)
 -- group by bi."name" ;
 
--- ТЕСТ!
+-- ТЕСТ! отладка
 -- SELECT i."name" as name_item, bci.count as item_count, bi."name" as name_barter, bc.count  as count_barter FROM public.barter_count_item bci
 -- left join item i on i.id = bci.id_item
 -- left join barter_count bc on bc.id_item = bci.id_item
